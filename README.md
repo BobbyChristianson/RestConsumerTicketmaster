@@ -2,9 +2,9 @@
 
 Here is the rest consumer for this Ticketmaster assessment.
 I used Spring frame work (Spring boot and Spring JPA) and Jackson.
-Jackson and JPA for easily creating object classes to pull down json data from ticketmaster's website.
-While I used Spring Boot, I ultimately didn't use the RestController because I wanted to have this application run in the terminal.
-You will see that the application will pull down a list of all the Artists avaiable and give you a choice to query one for upcoming events in the consol.
+Jackson and JPA for easily creating object classes to pull down json data into java objects for easy consumption.
+While I used Spring Boot, I ultimately didn't use the RestController because I wanted to have this application run in the consol.
+You will see that the application will pull down a list of all the Artists available and give you a choice to query one for upcoming events in the consol.
 
 After unzipping the project, open the project in IntelliJ.
 Once opened in your editor 'mvn clean install' in terminal or with your IDE.
