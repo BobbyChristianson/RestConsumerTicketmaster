@@ -5,9 +5,8 @@ I used Spring framework (Spring boot and Spring JPA) and Jackson.
 Jackson and JPA for easily creating object classes to pull down json data into java objects for easy consumption.
 
 After unzipping the project, open the project in IntelliJ.
-Once opened in your editor 'mvn clean install' in terminal or with your IDE.
-I have created 2 tests that should pass upon building the project. 
-'Run mvn clean install' to build the project 
+I have created 2 tests that should pass upon building the project.       
+Run `mvn clean install` to build the project. 
 
 
 Call `mvn spring-boot:run` in the project root directory.      
@@ -27,7 +26,7 @@ Call it in the browser.
 
 
 Choose an artist from the list and supply it as a variable `name`.
-However, keep in mind that artist names with spaces need to have their spaces replaced with a `+`
+However, keep in mind that artist names with spaces need to have their spaces replaced with a  
 For example
 
 <img width="623" alt="screenshotty2" src="https://user-images.githubusercontent.com/25803933/169246650-c87f63bb-db82-427f-ac88-3548a3b17bd2.png">
