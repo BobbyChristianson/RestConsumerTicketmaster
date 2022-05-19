@@ -16,13 +16,13 @@ Call `mvn spring-boot:run` in the project root directory.
 
 
 
-The rest endpoint will be at `http://localhost:8080/`
-Call `http://localhost:8080/artist/` from any terminal session with curl
+The rest endpoint will be at `http://localhost:8080/`.            
+Call `curl http://localhost:8080/artist/` from any terminal session.      
 <img width="418" alt="screenShott" src="https://user-images.githubusercontent.com/25803933/169246798-de147a8b-426b-49d5-a20d-8ad0a0adaefc.png">
 
 OR
 
-Call it in the browser. However, the browser verion does not support new line characters.
+It can also be called in the browser. However, the browser verion does not support new line characters.
 <img width="935" alt="Screen Shot 2022-05-19 at 12 59 33 AM" src="https://user-images.githubusercontent.com/25803933/169246778-6be37829-040b-4300-b72b-1061b03ec4e4.png">
 
 
