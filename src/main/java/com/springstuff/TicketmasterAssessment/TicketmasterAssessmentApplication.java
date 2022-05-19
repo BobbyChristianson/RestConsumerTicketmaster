@@ -46,10 +46,11 @@ public class TicketmasterAssessmentApplication {
 					.findFirst()
 					.orElseThrow();
 		} catch(NoSuchElementException e){
-			return Arrays.stream(artistList).map(artist1 -> artist1.getName())
-					.reduce("ARTISTS: \n",(partialString, element) -> partialString + element + "\n");
+			return Arrays.stream(artistList)
+					.map(artist1 -> artist1.getName())
+					.reduce("ARTISTS: \n",(partialString, element) -> partialString + element + ",\n");
 		} catch(Exception e){
-			return String.format("Did not find %s!", name);
+			return e.getMessage();
 		}
 
 		List<Event> eventList;
@@ -96,7 +97,7 @@ public class TicketmasterAssessmentApplication {
 
 		return Arrays.stream(response.getBody())
 				.filter(event -> Arrays.stream(event.getArtists())
-						.anyMatch(artistID -> artistID.getId()==artist.getId()))
+				.anyMatch(artistID -> artistID.getId()==artist.getId()))
 				.collect(Collectors.toList());
 	}
 
