@@ -1,12 +1,14 @@
-# RestConsumerTicketmaster README
+# RestConsumerTicketmaster
 
-Here is the rest consumer assessment for this Ticketmaster.
-I used Spring framework (Spring boot and Spring JPA) and Jackson.
-Jackson and JPA for easily creating object classes to pull down json data into java objects for easy consumption.
+Here is a little Spring Boot app that will return upcoming events and venues for you favorite artist.
+On `master` is a spring boot app, however a console runnable version (System.in) is on the `RunInConsoleBranch`
+
+I used Spring Boot, Hibernate(Spring JPA) and Jackson.
+Jackson and JPA for easily creating object classes to pull down json data into java objects for easy consumption and return.
 
 After unzipping the project, open the project in IntelliJ.
-I have created 2 tests that should pass upon building the project.       
 Run `mvn clean install` to build the project. 
+I have created 2 tests that should pass upon building the project.       
 
 
 Call `mvn spring-boot:run` in the project root directory.      
@@ -14,13 +16,13 @@ Call `mvn spring-boot:run` in the project root directory.
 
 
 
-The rest endpoint will be at `http://localhost:8080/artist/`
-Call if from terminal with curl
+The rest endpoint will be at `http://localhost:8080/`
+Call `http://localhost:8080/artist/` from any terminal session with curl
 <img width="418" alt="screenShott" src="https://user-images.githubusercontent.com/25803933/169246798-de147a8b-426b-49d5-a20d-8ad0a0adaefc.png">
 
 OR
 
-Call it in the browser.
+Call it in the browser. However, the browser verion does not support new line characters.
 <img width="935" alt="Screen Shot 2022-05-19 at 12 59 33 AM" src="https://user-images.githubusercontent.com/25803933/169246778-6be37829-040b-4300-b72b-1061b03ec4e4.png">
 
 
